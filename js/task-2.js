@@ -6,10 +6,7 @@ function calcAverageCalories(days) {
   let sumAllCalories = 0;
   let countDays = days.length;
   for (let allCalories of days) {
-    caloriesArray.push(allCalories.calories);
-  }
-  for (let i = 0; i < caloriesArray.length; i++) {
-    sumAllCalories += caloriesArray[i];
+    sumAllCalories += allCalories.calories;
   }
   return sumAllCalories / countDays;
 }
